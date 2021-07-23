@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600&display=swap");
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  background-color: hsl(0, 0%, 81%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 4%;
+  
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  gap: 0.5rem;
+  justify-content: space-evenly;
+}
+
+.desc {
+  border-radius: 5px;
+  padding: 1rem;
+  max-width: 100%;
+}
+
+.bio {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+img {
+  border-radius: 50%;
+}
+
+p {
+  color: hsl(0, 0%, 100%);
+  font-size: 1rem;
+}
+.white-text {
+  color: white;
+}
+
+.bold-text {
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+.Daniel {
+  background: hsl(263, 55%, 52%) url(images/quotation.svg);
+  background-repeat: no-repeat;
+  background-position-x: right;
+}
+.Jonathan {
+  background: hsl(217, 19%, 35%);
+}
+.Jeanette {
+  background: hsl(0, 0%, 100%);
+}
+.Patrick {
+  background: hsl(219, 29%, 14%);
+}
+
+.kira {
+  background: hsla(313, 0%, 100%, 1);
+}
+
+span {
+  color: hsl(0, 0%, 81%);
+}
+
+q {
+  font-size: 16px;
+  color: hsl(219, 29%, 14%);
+}
+
+/*still in the.desc section*/
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+@media screen and (min-width: 790px) {
+  .container {
+    margin: 0;
+  }
+  .Daniel {
+    grid-column: 1 / span 2;
+  }
+
+  .Patrick {
+    grid-column: span 2;
+  }
+
+  .kira {
+    background: hsla(313, 0%, 100%, 1);
+    grid-column: 4 / span 5;
+    grid-row: -1 / span 3;
+  }
+}
